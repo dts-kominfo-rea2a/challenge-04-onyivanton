@@ -8,12 +8,15 @@ const dates = [
 ];
 
 // TODO: Buatlah fungsi createDate
-const createDate = null;
-
+const createDate =  dates.sort;
+let arrDates = [];
 // ! JANGAN DIMODIFIKASI
 (() => {
   // IIFE
 
+  for (int a=0;a<dates.length;a++){
+    arrDates.push(dates(a));
+  }
   // '1546387200-1580662800-1614841200-1617573600-1651802400' (dalam string)
   console.log(createDate?.(dates));
 
@@ -25,3 +28,6 @@ module.exports = {
   dates,
   createDate,
 };
+
+// const tanggaldalamEpoch = Date.now();
+// console.log(tanggaldalamEpoch);
